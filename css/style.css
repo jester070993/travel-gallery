@@ -13,12 +13,12 @@
   position: relative;
 }
 
-img {
+.img {
   max-width: 100%;
   filter: grayscale(100%);
   transition: all 0.5s ease;
 }
-img:hover {
+.img:hover {
   filter: none;
 }
 
@@ -43,6 +43,15 @@ img:hover {
 
 h1 {
   font-size: 3rem;
+}
+
+.bold {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.text {
+  font-size: 1.2rem;
 }
 
 /*# sourceMappingURL=style.css.map */

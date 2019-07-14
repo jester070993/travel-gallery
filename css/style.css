@@ -4,6 +4,7 @@
   flex-wrap: wrap;
   max-width: 1000px;
   justify-content: center;
+  align-items: center;
 }
 
 .item {
@@ -35,7 +36,8 @@ img:hover {
   transform: translate(-50%, -50%);
 }
 
-.jumbotron {
+.jumbotron,
+.center {
   text-align: center;
 }
 

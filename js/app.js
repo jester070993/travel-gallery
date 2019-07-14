@@ -1,22 +1,23 @@
 const  items  = document.querySelectorAll(".item");
 
 const flex = document.querySelector(".flex")
-
+const container = document.querySelector(".container-fluid");
 
 items.forEach( item => 
 	item.addEventListener("click", () => {
-		console.log(item)
+
 		$(items).hide();
-		createBackBtn();
-		console.log(item.parentNode)
+
+		setTimeout(createBackBtn, 500);
+
 		if (item.classList.contains("japan")){
 			setTimeout(japan, 500)
 		}
 		else if (item.classList.contains("hawaii")){
 			setTimeout(hawaii, 500)
 		}
-		else  if (item.classList.contains("honk-kong")){
-			setTimeout(honk-kong, 500)
+		else  if (item.classList.contains("hongkong")){
+			setTimeout(hongkong, 500)
 		}
 		else  if (item.classList.contains("bolivia")){
 			setTimeout(bolivia, 500)
@@ -31,17 +32,29 @@ items.forEach( item =>
 	})
 )
 
+//correct fucntion code for create dymantic gallery, works with baggete box when clicked, need to turn off filter for hover still  on, whenn
+//cliedk
 function hawaii() {
 		for(let i=1 ;  i <= 24 ; i++){
-		let box = document.createElement("div");
+		baguetteBox.run(".flex")
 		let img  = document.createElement("img");
-		box.classList.add("item");	
+
+		let a = document.createElement("a");
+		a.href = `https://res.cloudinary.com/jester070993/image/upload/v1563056098/hawaii16/full/${i}.jpg`;
+
+		a.classList.add("item");	
+
 		img.classList.add("img-thumbnail");
 		img.classList.add("frontImg");
-		img.src = `https://res.cloudinary.com/jester070993/image/upload/v1563056098/hawaii16/thumb/${i}.jpg`
-		box.appendChild(img);
+		img.src = `https://res.cloudinary.com/jester070993/image/upload/v1563056098/hawaii16/thumb/${i}.jpg`;
+
+		a.appendChild(img);
+		// box.appendChild(a);
+
+		// box.appendChild(img);
+
 		img.classList.add("frontImg");
-		flex.appendChild(box);
+		flex.appendChild(a);
 	}
 	
 }
@@ -109,7 +122,7 @@ function thailand() {
 
 
 function hongkong() {
-		for(let i=1 ;  i <= 33 ; i++){
+		for(let i=1 ;  i <= 15 ; i++){
 		let box = document.createElement("div");
 		let img  = document.createElement("img");
 		box.classList.add("item");	
@@ -126,12 +139,40 @@ function hongkong() {
 
 
 function createBackBtn(){
+	const div = document.createElement("div");
 	const btn = document.createElement("button");
-
 	btn.classList.add("btn");
-	btn.classList.add("btn-warning");
+	btn.classList.add("btn-primary");
+	div.classList.add("center");
 	btn.textContent = "Back"
+	div.appendChild(btn)
 
-	flex.parentNode.insertBefore(btn);
+	 container.insertBefore(div, flex);
+
+	 	btn.addEventListener("click", () => {
+			show();
+			hide();
+	})
+
 
 }
+
+
+function show(){
+	$(items).show();
+}
+
+
+
+
+// function hide(){
+// 	let allPics = document.querySelectorAll(".item")
+// 	console.log(allPics.length)
+
+// 	for (let i = 0 ; i <= allPics.length ; i++ ){
+
+// 		if (allPics[i].className == item)
+// 		$(items).hide();
+// 	}
+	
+// }

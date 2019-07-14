@@ -4,10 +4,12 @@
 	flex-wrap: wrap;
 	max-width: 1000px;
 	justify-content: center;
+	align-items: center;
 }
 
  .item {
 	max-width: 300px;
+	// height: 300px;
 	margin: 8px;
 	position: relative;
 
@@ -21,6 +23,7 @@ img{
 		filter: none;
 	}
 }
+
 
 
 .frontImg{
@@ -40,7 +43,8 @@ img{
 
 
 
-.jumbotron{
+.jumbotron,
+.center{
 	text-align: center;
 }
 

@@ -6,7 +6,7 @@ const container = document.querySelector(".container-fluid");
 items.forEach( item => 
 	item.addEventListener("click", () => {
 
-		$(items).hide();
+		$(items).fadeOut();
 
 		setTimeout(createBackBtn, 500);
 
@@ -38,10 +38,9 @@ function hawaii() {
 		for(let i=1 ;  i <= 24 ; i++){
 		baguetteBox.run(".flex")
 		let img  = document.createElement("img");
-
 		let a = document.createElement("a");
-		a.href = `https://res.cloudinary.com/jester070993/image/upload/v1563056098/hawaii16/full/${i}.jpg`;
 
+		a.href = `https://res.cloudinary.com/jester070993/image/upload/v1563056098/hawaii16/full/${i}.jpg`;
 		a.classList.add("item");	
 
 		img.classList.add("img-thumbnail");
@@ -49,14 +48,10 @@ function hawaii() {
 		img.src = `https://res.cloudinary.com/jester070993/image/upload/v1563056098/hawaii16/thumb/${i}.jpg`;
 
 		a.appendChild(img);
-		// box.appendChild(a);
-
-		// box.appendChild(img);
-
+	
 		img.classList.add("frontImg");
 		flex.appendChild(a);
-	}
-	
+	}	
 }
 
 function japan() {
@@ -146,23 +141,17 @@ function createBackBtn(){
 	div.classList.add("center");
 	btn.textContent = "Back"
 	div.appendChild(btn)
-
 	 container.insertBefore(div, flex);
-
 	 	btn.addEventListener("click", () => {
 			show();
 			hide();
 	})
 
-
 }
-
 
 function show(){
 	$(items).show();
 }
-
-
 
 
 // function hide(){

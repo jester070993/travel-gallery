@@ -1,3 +1,20 @@
+*{
+	box-sizing: border-box;
+}
+
+body{
+	background-image: url("https://www.toptal.com/designers/subtlepatterns/patterns/prism.png");
+	background-size: contain;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+footer{
+	flex:1;
+}
+
+
 .flex{
 	margin: 0 auto;
 	display: flex;
@@ -42,6 +59,12 @@
 	}
 
 
+.jumbotron{
+
+	background-image: url("https://www.toptal.com/designers/subtlepatterns/patterns/prism.png");
+	background-size: cover;
+	background-position: right bottom;
+}
 
 .jumbotron,
 .center{
@@ -56,8 +79,41 @@ h1{
 .bold{
 	font-size: 1.2rem;
 	font-weight: 500;
+	color:  rgba(250, 250, 250, .6);;
+
 }
 
 .text{
 		font-size: 1.2rem;
+		color:  rgba(250, 250, 250, .5 );;
+}
+
+
+
+.btn{
+	background-color: rgba(100, 100, 100, .5);
+	color: rgba(250, 250, 250, .3 );
+	position: relative;
+ 	font-size: 1.2rem;
+ 	font-weight: 500;
+ 	transition: all .5s ease;
+ 	text-transform: uppercase;
+ 	border: 2px solid rgba(200, 100, 100, .5); ;
+}
+
+.btn::after{
+	position: absolute;
+	z-index:-1 ;
+	content: " ";
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 0;
+	background-color: rgba(200, 100, 100, 1);
+	transition: all .5s ease;
+}
+
+.btn:hover::after{
+	width: 100%;
+	color: white;
 }

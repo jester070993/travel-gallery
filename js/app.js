@@ -197,6 +197,11 @@ function hongkong() {
             $(h1).fadeIn("slow")
         });
 
+
+        	const header = document.querySelector(".jumbotron");
+		header.style.backgroundImage = "url('https://source.unsplash.com/ngdpTQouVso/1600x900')"
+
+
         // const btn = document.querySelector(".about")
         // btn.addEventListener("click", () => console.log("click test aabout btn"))
     }
@@ -283,3 +288,9 @@ function createAboutBtn(param1, param2) {
         $(ul).slideToggle();
     })
 }
+
+
+// function backgroundImg(src){
+// 	const header = document.querySelector(".jumbotron");
+// 	header.style.backgroundImage = src
+// }

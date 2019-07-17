@@ -1,5 +1,7 @@
 *{
 	box-sizing: border-box;
+	font-family: 'Notable', sans-serif;
+
 }
 
 body{
@@ -10,9 +12,10 @@ body{
 	flex-direction: column;
 }
 
-footer{
-	flex:1;
-}
+
+// mainss{
+// 	flex:1;
+// }
 
 
 .flex{
@@ -49,21 +52,40 @@ footer{
 
 
 .imgOverlay{
-	position: absolute;
-	text-align: center;	
-	font-size: 1.5rem;
-	color: white;
+		position: absolute;
+		text-align: center;	
+		font-size: 1.6rem;
+		color: white;
 	  top: 50%;
-  left: 50%;
-  transform: translate(-50% , -50%);
+	  left: 50%;
+	  transform: translate(-50% , -50%);
+	  text-shadow: 4px 4px 20px rgba(200, 100, 100, 1);
+	  letter-spacing: .2rem;
+	  color: snow;
 	}
 
 
 .jumbotron{
+	// background-image: url("https://www.toptal.com/designers/subtlepatterns/patterns/prism.png");
+	// background-size: cover;
+	// background-position: right bottom;
+	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#b5bdc8+0,828c95+36,28343b+100;Grey+Black+3D */
+	// background: #b5bdc8; /* Old browsers */
+	// background: -moz-linear-gradient(left, #6D757C 0, #141A1D 100%); /* FF3.6-15 */
+	// background: -webkit-linear-gradient(left, #6D757C 0, #141A1D 100%); /* Chrome10-25,Safari5.1-6 */
+	// background: linear-gradient(left, #6D757C 0, #141A1D 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	// filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b5bdc8', endColorstr='#28343b',GradientType=1 ); /* IE6-9 */
+  	
+  	  background-image: linear-gradient(to bottom right, rgba(75, 75, 75, .2), rgba(50, 50, 50, .9)), url("https://www.toptal.com/designers/subtlepatterns/patterns/prism.png");
+	  text-shadow: 4px 4px 20px rgba(200, 100, 100, 1);
 
-	background-image: url("https://www.toptal.com/designers/subtlepatterns/patterns/prism.png");
-	background-size: cover;
-	background-position: right bottom;
+
+	color: #B6B6B6;
+	letter-spacing: .3rem;
+
+
+
+
 }
 
 .jumbotron,

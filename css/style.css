@@ -1,15 +1,13 @@
 * {
   box-sizing: border-box;
-  font-family: "Notable", sans-serif;
-}
+  font-family: 'Notable', sans-serif; }
 
 body {
   background-image: url("https://www.toptal.com/designers/subtlepatterns/patterns/prism.png");
   background-size: contain;
   height: 100vh;
   display: flex;
-  flex-direction: column;
-}
+  flex-direction: column; }
 
 .flex {
   margin: 0 auto;
@@ -17,27 +15,22 @@ body {
   flex-wrap: wrap;
   max-width: 1000px;
   justify-content: center;
-  align-items: center;
-}
+  align-items: center; }
 
 .item {
   max-width: 300px;
   margin: 8px;
-  position: relative;
-}
+  position: relative; }
 
 .img {
   max-width: 100%;
   filter: grayscale(100%);
-  transition: all 0.5s ease;
-}
-.img:hover {
-  filter: none;
-}
+  transition: all .5s ease; }
+  .img:hover {
+    filter: none; }
 
 .frontImg {
-  cursor: pointer;
-}
+  cursor: pointer; }
 
 .imgOverlay {
   position: absolute;
@@ -48,37 +41,31 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   text-shadow: 4px 4px 20px #c86464;
-  letter-spacing: 0.2rem;
-  color: snow;
-}
+  letter-spacing: .2rem;
+  color: snow; }
 
 .jumbotron {
   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#b5bdc8+0,828c95+36,28343b+100;Grey+Black+3D */
   background-image: linear-gradient(to bottom right, rgba(75, 75, 75, 0.2), rgba(50, 50, 50, 0.9)), url("https://www.toptal.com/designers/subtlepatterns/patterns/prism.png");
   text-shadow: 4px 4px 20px #c86464;
   color: #B6B6B6;
-  letter-spacing: 0.3rem;
-}
+  letter-spacing: .3rem; }
 
 .jumbotron,
 .center {
-  text-align: center;
-}
+  text-align: center; }
 
 h1 {
-  font-size: 3rem;
-}
+  font-size: 5rem; }
 
 .bold {
   font-size: 1.2rem;
   font-weight: 500;
-  color: rgba(250, 250, 250, 0.6);
-}
+  color: rgba(250, 250, 250, 0.6); }
 
 .text {
   font-size: 1.2rem;
-  color: rgba(250, 250, 250, 0.5);
-}
+  color: rgba(250, 250, 250, 0.5); }
 
 .btn {
   background-color: rgba(100, 100, 100, 0.5);
@@ -86,10 +73,9 @@ h1 {
   position: relative;
   font-size: 1.2rem;
   font-weight: 500;
-  transition: all 0.5s ease;
+  transition: all .5s ease;
   text-transform: uppercase;
-  border: 2px solid rgba(200, 100, 100, 0.5);
-}
+  border: 2px solid rgba(200, 100, 100, 0.5); }
 
 .btn::after {
   position: absolute;
@@ -100,12 +86,10 @@ h1 {
   height: 100%;
   width: 0;
   background-color: #c86464;
-  transition: all 0.5s ease;
-}
+  transition: all .5s ease; }
 
 .btn:hover::after {
   width: 100%;
-  color: white;
-}
+  color: white; }
 
 /*# sourceMappingURL=style.css.map */
